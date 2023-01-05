@@ -271,3 +271,5 @@ var randomIndex = Math.floor(Math.random() * namesMyFriends.length);
 console.log(randomIndex);
 
 console.log(namesMyFriends[randomIndex]);
+
+console.log("Hello Git-Hub");
