@@ -273,3 +273,47 @@ console.log(randomIndex);
 console.log(namesMyFriends[randomIndex]);
 
 console.log("Hello Kyiv");
+
+
+ var phrases = [
+  "That sounds good",
+  "Yes, you should definitely do that",
+  "I'm not sure that's a great idea",
+  "Maybe not today?",
+  "Computer says no."
+];
+console.log(phrases[Math.floor(Math.random() * 5)]);
+
+var randomWords = ["Morning", "Hello", "Hi", "Night"];
+console.log(randomWords[Math.floor(Math.random() * 4)]);
+
+var signZodiac = [
+  "Aries",
+  "Taurus",
+  "Gemini",
+  "Cancer",
+  "Leo",
+  "Virgio",
+  "Libra",
+  "Scorpio",
+  "Sagittarius",
+  "Capricorn",
+  "Aquarius",
+  "Pisces"
+];
+
+var predictionForSignZodiac = [
+  "You will have a nice day",
+  "You will have a beautiful mood",
+  "Good news is waiting for you tomorrow",
+  "A gift is waiting for you"
+];
+
+var randomZodiacIndex = Math.floor(Math.random() * signZodiac.length);
+var randomPredictionForZodiac = Math.floor(Math.random() * predictionForSignZodiac.length);
+
+
+var selectedZodiac = signZodiac[randomZodiacIndex];
+var predictionZodiac = predictionForSignZodiac[randomPredictionForZodiac];
+var result = selectedZodiac + " - " + predictionZodiac;
+console.log(result);
