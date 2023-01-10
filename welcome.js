@@ -317,3 +317,25 @@ var selectedZodiac = signZodiac[randomZodiacIndex];
 var predictionZodiac = predictionForSignZodiac[randomPredictionForZodiac];
 var result = selectedZodiac + " - " + predictionZodiac;
 console.log(result);
+
+var faceParts = [
+  "Nose",
+  "Lips",
+  "Eyes",
+  "Brow"
+];
+
+var sizeFaceParts = [
+  "Big",
+  "Thin",
+  "Wide",
+  "Small"
+];
+
+var randomIndexParts = Math.floor(Math.random() * faceParts.length);
+var randomIndexSize = Math.floor(Math.random() * sizeFaceParts.length);
+
+var selectedFaceParts = faceParts[randomIndexParts];
+var selectedSizeFaceParts = sizeFaceParts[randomIndexSize];
+var youLook = selectedFaceParts + " ~ " + selectedSizeFaceParts;
+console.log(youLook);
