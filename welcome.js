@@ -339,3 +339,23 @@ var selectedFaceParts = faceParts[randomIndexParts];
 var selectedSizeFaceParts = sizeFaceParts[randomIndexSize];
 var youLook = selectedFaceParts + " ~ " + selectedSizeFaceParts;
 console.log(youLook);
+
+var bodyPartsHuman = ["Nose", "Teeth", "Skin"];
+var nameAnimal = ["Mouse", "Dinosaurus", "Crocodile"];
+var ajectives = ["Dirty", "Smelly","Nasty"];
+
+var randomBodyPart = bodyPartsHuman[Math.floor(Math.random() * bodyPartsHuman.length)];
+var randomAjective = ajectives[Math.floor(Math.random() * ajectives.length)];
+var randomAnimal = nameAnimal[Math.floor( Math.random() * nameAnimal.length)];
+
+var resultInsult = "Your" + " " + randomBodyPart + " " + "Looks like" + " " + randomAjective + " " + randomAnimal;
+console.log(resultInsult);
+
+
+
+
+
+
+
+
+
