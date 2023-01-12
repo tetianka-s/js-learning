@@ -339,10 +339,10 @@ var selectedFaceParts = faceParts[randomIndexParts];
 var selectedSizeFaceParts = sizeFaceParts[randomIndexSize];
 var youLook = selectedFaceParts + " ~ " + selectedSizeFaceParts;
 console.log(youLook);
-
-var bodyPartsHuman = ["Nose", "Teeth", "Skin"];
-var nameAnimal = ["Mouse", "Dinosaurus", "Crocodile"];
-var ajectives = ["Dirty", "Smelly","Nasty"];
+//task 1
+var bodyPartsHuman = ["Nose", "Teeth", "Skin","Fingers"];
+var nameAnimal = ["Mouse", "Dinosaurus", "Crocodile","Piranha"];
+var ajectives = ["Dirty", "Smelly","Nasty","ugly"];
 
 var randomBodyPart = bodyPartsHuman[Math.floor(Math.random() * bodyPartsHuman.length)];
 var randomAjective = ajectives[Math.floor(Math.random() * ajectives.length)];
@@ -351,11 +351,85 @@ var randomAnimal = nameAnimal[Math.floor( Math.random() * nameAnimal.length)];
 var resultInsult = "Your" + " " + randomBodyPart + " " + "Looks like" + " " + randomAjective + " " + randomAnimal;
 console.log(resultInsult);
 
+//task 2
+var animalPart = ["tail", "paws", "nose", "skin"];
+var randomAnimalPart = animalPart[Math.floor(Math.random() * animalPart.length)];
+var resultGeneral = "Your" + " " + randomBodyPart + " is more " + randomAjective + " than a " + randomAnimal + " 's " + randomAnimalPart;
+console.log(resultGeneral);
+
+//task 3
+var resultMetodJoin = [
+  "Your",
+  randomBodyPart,
+  "is more",
+  randomAjective,
+  "than a",
+  randomAnimal,
+  "'s",
+  randomAnimalPart
+];
+var resultGeneralMetodJoin = resultMetodJoin.join(" ");
+console.log(resultGeneralMetodJoin);
+
+//task 4
+var selectedString = [3, 2, 1];
+var resultSrtring = selectedString.join(" is bigger than ");
+console.log(resultSrtring);
 
 
+//objects
+//з використанням подвійних лапок, в ключі можуть бути вставлені пробіли 
+var cat = {
+  "legs": 4,
+  "name": "Murchik",
+  "color": "white and gray"
+};
+//без використання подвійних лапок(ми не можемо використовувати пробіли)
+var cat = {
+  legs: 4,
+  name: "Murchik",
+  color: "white and gray"
+};
 
+var questionnaireForPeple = {
+  name: "Nick",
+  age: 26,
+  city: "Kyiv",
+  profession: "programmer",
+  phone: 08484558484,
+  child: "no"
+};
 
+//Якщо розмістити обєкт в одному текстовому рядку
+var questionnaireForPeple = { name: "Nick", age: 26, city: "Kyiv", profession: "programmer", phone: 08484558484, child: "no" };
 
+var dog = {
+  name: "Pancake",
+  age: 6, 
+  color: "white"
+};
 
+var cat = {
+  name: "Coconut",
+  age: 4,
+  color: "gold"
+};
 
+console.log(Object.keys(dog));
+console.log(Object.keys(cat));
+
+console.log(Object.keys(dog).length);
+console.log(Object.keys(cat).length);
+
+var cat = {};
+cat["name"] = "Coconut";
+cat["age"] = 4;
+cat["color"] = "white";
+console.log(cat);
+
+var cat = {};
+cat.name = "Coconut";
+cat.age = 4;
+cat.color = "white";
+console.log(cat);
 
