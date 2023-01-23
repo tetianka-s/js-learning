@@ -433,3 +433,40 @@ cat.age = 4;
 cat.color = "white";
 console.log(cat);
 
+var a = 4;
+var b = 5;
+
+var result = a * b;
+console.log(result);  
+
+var scores = {
+  Ann: 0,
+  Bob: 0,
+  Lisa: 0,
+  David: 0
+};
+console.log(scores);
+
+scores.Bob += 1;
+scores.Lisa++;
+scores.Ann ++;
+scores.David +=4;
+
+
+
+console.log(scores);
+
+var myObject = {
+  "name": "One object",
+  "some array": [7, 9, {purpose: "fusion dish", number: 123}, 3.3],
+  "random animal": "Shark"
+};
+
+var selectedArray = myObject["some array"][2].number;
+console.log(selectedArray);
+
+console.log(myObject);
+
+myObject["some array"][3] += 2;
+
+console.log(myObject);
