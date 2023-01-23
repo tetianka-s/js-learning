@@ -514,9 +514,9 @@ var movies = {
   format: "Blu-ray"
  }
 };
- var findingNemo = movies["findingNemo"];
+ var findingNemo = movies["Finding Nemo"];
  console.log(findingNemo.actors);
  console.log(findingNemo.year);
- var starWars = movies["starWars"];
+ var starWars = movies["Star Wars"];
  console.log(starWars.format);
  console.log(starWars.actors);
