@@ -378,7 +378,7 @@ console.log(resultSrtring);
 
 
 //objects
-//з використанням подвійних лапок, в ключі можуть бути вставлені пробіли 
+//з використанням подвійних лапок, в ключі можуть бути вставлені пробіли
 var cat = {
   "legs": 4,
   "name": "Murchik",
@@ -405,7 +405,7 @@ var questionnaireForPeple = { name: "Nick", age: 26, city: "Kyiv", profession: "
 
 var dog = {
   name: "Pancake",
-  age: 6, 
+  age: 6,
   color: "white"
 };
 
@@ -470,3 +470,53 @@ console.log(myObject);
 myObject["some array"][3] += 2;
 
 console.log(myObject);
+
+
+var fruts = [
+  { name: "Lemon", color: "Yellow" },
+  { name:"Orange", color: "Orange" },
+  { name: "Kivi", color: "Green" }
+];
+ console.log(fruts[0]);
+
+var anna = {name:"Anna", age: 25, luckyNumbers:[2, 4, 8, 16], address:{home:"", work:"", tel:089, email:"@" } };
+var dave = {name:"Dave", age: 29, luckyNumbers:[3, 9, 40], address:{home:"", work:"", tel:089, email:"@" } };
+var kate = {name:"Kate", age: 17, luckyNumbers:[1, 2, 3], address:{home:"", work:"", tel:089, email:"@" } };
+
+var friends = [
+  anna, dave, kate
+];
+
+ console.log(friends[1].address);
+
+
+var owedMoney = {};
+owedMoney["Jimmy"] = 5;
+owedMoney["Anna"] = 7;
+console.log(owedMoney["Jimmy"]);
+console.log(owedMoney["Jimmy"] += 3);
+console.log(owedMoney);
+
+var movies = {
+"Finding Nemo": {
+  year: 2003,
+  actors: ["Albert Brooks", "Alexander Gould"],
+  format: "DVD"
+ },
+"Star Wars": {
+  year: 1983,
+  actors: ["Mark Hamill", "Harisson Ford"],
+  format: "DVD"
+ },
+"Harry Potter": {
+  year: 2007,
+  actors: ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
+  format: "Blu-ray"
+ }
+};
+ var findingNemo = movies["findingNemo"];
+ console.log(findingNemo.actors);
+ console.log(findingNemo.year);
+ var starWars = movies["starWars"];
+ console.log(starWars.format);
+ console.log(starWars.actors);
